@@ -34,49 +34,12 @@ Le pipeline a été conçu avec une logique :
 - reproductible ;
 - et proche des architectures de data engineering utilisées dans des workflows ESG industriels.
   
+<p align="center">
+  <img src="figures/clean_architecture_globale.png" width="900">
+</p>
 
 
-                ┌────────────────────┐
-                │  Liste entreprises │
-                └─────────┬──────────┘
-                          │
-                          
-              ┌──────────────────────┐
-              │ Normalisation émetteurs │
-              └─────────┬────────────┘
-                        │
-                        ▼
-          ┌─────────────────────────────┐
-          │ Discovery documentaire ESG │
-          └─────────┬──────────────────┘
-                    │
-     ┌──────────────┴──────────────┐
-     ▼                             ▼
-Corporate crawling           Recherche DDGS
-(sites officiels)            (web complémentaire)
-
-     └──────────────┬──────────────┘
-                    ▼
-         ┌────────────────────────┐
-         │ Construction PDF Index │
-         └──────────┬─────────────┘
-                    ▼
-         ┌────────────────────────┐
-         │ Validation des PDFs    │
-         └──────────┬─────────────┘
-                    ▼
-         ┌────────────────────────┐
-         │ Scoring documentaire   │
-         └──────────┬─────────────┘
-                    ▼
-         ┌────────────────────────┐
-         │ Sélection robuste      │
-         └──────────┬─────────────┘
-                    ▼
-         ┌────────────────────────┐
-         │ Ingestion finale ESG   │
-         └────────────────────────┘
-
+  
 
 ### Fonctionnalités implémentées
 #### 1. Gestion multi-source des documents ESG
