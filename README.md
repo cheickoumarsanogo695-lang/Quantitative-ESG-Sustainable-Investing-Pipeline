@@ -188,20 +188,21 @@ Cette approche permet :
   <em>Activation conditionnelle de la collecte secondaire selon la couverture documentaire ESG.</em>
 </p>
 
+## Deuxième étape du projet : Extraction ESG multimodale depuis les PDFs
 
+La deuxième phase prolonge directement le pipeline de collecte documentaire avec le notebook `ESG_extraction_phase2.ipynb`.
 
+Elle transforme les rapports ESG collectés en données structurées et auditables grâce à une chaîne :
 
+- chargement des documents ingérés en phase 1 depuis `esg_data/metadata/documents_metadata.csv` ;
+- parsing page par page des PDFs ;
+- extraction du texte, des blocs, des tables et des images ;
+- OCR optionnel lorsque l'environnement dispose de Tesseract ;
+- classification thématique ESG des pages et blocs ;
+- extraction de métriques pilotée par le registre `data/esg_metric_registry_catalog.csv` ;
+- normalisation des valeurs et unités ;
+- validation métier, scoring de confiance et file de revue manuelle ;
+- construction d'un panel final `company-year-metric` exploitable pour le scoring ESG et l'analyse quantitative.
 
-
-
-
-
-
-
-
-
-
-
-
-
+Cette phase conserve la logique de la première partie : modularité, traçabilité, statuts, scores, logs, schémas explicites et auditabilité jusqu'à la page source.
 
