@@ -205,4 +205,3 @@ Cette approche permet :
 
 
 
->>>>>>> 6370bca97beb47ff45f9285df507dc327fd0902a
