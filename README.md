@@ -40,7 +40,7 @@ Le pipeline a été conçu avec une logique :
                 │  Liste entreprises │
                 └─────────┬──────────┘
                           │
-                          ▼
+                          
               ┌──────────────────────┐
               │ Normalisation émetteurs │
               └─────────┬────────────┘
