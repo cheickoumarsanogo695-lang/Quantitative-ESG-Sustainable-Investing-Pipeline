@@ -1,0 +1,13 @@
+metric_name,category,aliases,expected_units,value_type,min_value,max_value,priority
+scope_1_emissions,climate,scope 1|scope 1 emissions|scope 1 ghg|direct ghg emissions|émissions scope 1|émissions directes,tco2e|ktco2e|mtco2e|tonnes co2e|tons co2e,numeric,0,,1
+scope_2_emissions_location_based,climate,scope 2 location-based|scope 2 location based|location-based scope 2|scope 2 emissions location,tco2e|ktco2e|mtco2e|tonnes co2e,numeric,0,,1
+scope_2_emissions_market_based,climate,scope 2 market-based|scope 2 market based|market-based scope 2|scope 2 emissions market,tco2e|ktco2e|mtco2e|tonnes co2e,numeric,0,,1
+scope_3_emissions,climate,scope 3|scope 3 emissions|scope 3 ghg|indirect emissions|émissions scope 3,tco2e|ktco2e|mtco2e|tonnes co2e,numeric,0,,1
+total_ghg_emissions,climate,total ghg emissions|total greenhouse gas emissions|total emissions|émissions totales de ges,tco2e|ktco2e|mtco2e|tonnes co2e,numeric,0,,1
+energy_consumption,energy,energy consumption|total energy consumption|consommation d'énergie|consommation énergétique,mwh|gwh|kwh|tj,numeric,0,,1
+renewable_energy_share,energy,renewable energy share|renewable electricity|part d'énergie renouvelable|énergies renouvelables,%|percent|percentage,percentage,0,100,2
+net_zero_target_year,climate_target,net zero by|net-zero by|carbon neutrality by|neutralité carbone|zéro émission nette,year,year,2025,2100,1
+women_on_board,governance,women on the board|women on board|female board members|femmes au conseil,%|percent|percentage,percentage,0,100,2
+board_independence,governance,board independence|independent directors|administrateurs indépendants|indépendance du conseil,%|percent|percentage,percentage,0,100,2
+employees,social,number of employees|employees|headcount|effectif|nombre de salariés,count|fte,integer,0,,2
+ltifr,social,lost time injury frequency rate|ltifr|taux de fréquence|accidents avec arrêt,rate,numeric,0,,2
