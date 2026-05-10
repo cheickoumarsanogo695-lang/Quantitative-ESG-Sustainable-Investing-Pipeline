@@ -35,9 +35,12 @@ Le pipeline a été conçu avec une logique :
 - et proche des architectures de data engineering utilisées dans des workflows ESG industriels.
   
 <p align="center">
-  <img src="figures/clean_architecture_globale.png" width="900">
+  <img src="clean_architecture_globale.png" width="900">
 </p>
 
+<p align="center">
+  <em>Architecture globale du pipeline ESG : discovery, scoring, sélection et ingestion documentaire.</em>
+</p>
 
   
 
