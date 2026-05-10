@@ -69,26 +69,13 @@ Cette approche améliore significativement :
 - et la résilience du pipeline face aux architectures web hétérogènes.
   
 
-             ┌─────────────────────┐
-             │ Référentiel ESG Docs │
-             └──────────┬──────────┘
-                        ▼
-             Génération des requêtes
-                        │
-                        ▼
-        ┌────────────────────────────┐
-        │ Discovery documentaire ESG │
-        └──────────┬─────────────────┘
-                   │
-      ┌────────────┴────────────┐
-      ▼                         ▼
- Exploration corporate      Recherche DDGS
-  Pages ESG / IR           Recherche web externe
+<p align="center">
+  <img src="clean_discovery_hybride.png" width="900">
+</p>
 
-      └────────────┬────────────┘
-                   ▼
-          URLs PDF candidates
-
+<p align="center">
+  <em>Combinaison entre exploration corporate et recherche web complémentaire via DDGS.</em>
+</p>
 
 
 #### 3. Validation robuste des PDFs
@@ -127,23 +114,13 @@ Cette architecture facilite également :
 - et l’amélioration future des modèles de scoring.
   
 
-Discovery multi-source
-        │
-        ▼
-┌────────────────────┐
-│   PDF INDEX ESG    │
-├────────────────────┤
-│ URL candidate      │
-│ Source page        │
-│ Anchor text        │
-│ PDF validation     │
-│ Company metadata   │
-│ Retrieval date     │
-└────────────────────┘
-        │
-        ▼
-Scoring documentaire
+<p align="center">
+  <img src="clean_pdf_index_scoring.png" width="700">
+</p>
 
+<p align="center">
+  <em>Centralisation des PDFs candidats avant validation, scoring et sélection robuste.</em>
+</p>
 
 #### 5. Scoring documentaire ESG
 
@@ -202,17 +179,13 @@ Cette approche permet :
 - de limiter le bruit documentaire ;
 - et de concentrer les ressources sur les cas réellement utiles.
 
-Run principal ESG
-                │
-                ▼
-     Analyse couverture ESG
-                │
-     ┌──────────┴──────────┐
-     ▼                     ▼
-Couverture bonne     Couverture insuffisante
-     │                     │
-     ▼                     ▼
- Stop collecte       Run secondaire ciblé
+<p align="center">
+  <img src="clean_collecte_progressive.png" width="750">
+</p>
+
+<p align="center">
+  <em>Activation conditionnelle de la collecte secondaire selon la couverture documentaire ESG.</em>
+</p>
 
 
 
